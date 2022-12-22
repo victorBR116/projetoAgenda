@@ -1,4 +1,5 @@
 <?php
+
 namespace AGD;
 
 class Agendamento {
@@ -35,4 +36,5 @@ class Agendamento {
     public function setDescricao($descricao) {
       $this->descricao = $descricao;
     }
+    
   }
