@@ -4,7 +4,6 @@ require_once 'exibicao.php';
 
 use AGD\Agendamento;
 
-var_dump($_POST);
 // Pega a data do agendamento
 if (isset($_POST['data'])) {
   $data = $_POST['data'];
@@ -32,7 +31,16 @@ $agendamento = new Agendamento($_POST['data'], $_POST['hora'], $_POST['descricao
   </head>
   <body>
     <h1 class="text-center">Agendamento realizado com sucesso!</h1>
-    <p class="text-center">Seu agendamento para o dia <?php echo $agendamento->getData() . ', '.  $agendamento->getHora() . ', ' .  $agendamento->getDescricao() . ', '; ?>foi confirmado.</p>
+    <p class="text-center">
+  Para o dia 
+  <?php 
+    $data = $agendamento->getData();
+    $hora = $agendamento->getHora();
+    $descricao = $agendamento->getDescricao();
+
+      echo "$data, $hora, \"$descricao\"";
+ 
+    ?></p>
     <div class="text-center">
       <button onclick="window.history.back()" class="btn btn-primary">Voltar</button>
       <button onclick="window.location.href='/agenda.php'" class="btn btn-primary">Continuar</button>
