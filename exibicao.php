@@ -1,6 +1,8 @@
 <?php
 
 namespace AGD;
+date_default_timezone_set("America/Sao_Paulo");
+
 use DateTime;
 class Agendamento {
     private $data;
@@ -28,8 +30,14 @@ class Agendamento {
     }
   
     public function getHora() {
+      if (empty($this->hora)) {
+        // Obtém a hora atual
+        $hora_atual = date("H:i");
+        return $hora_atual;
+      }
       return $this->hora;
     }
+    
   
     public function setHora($hora) {
       $this->hora = $hora;
