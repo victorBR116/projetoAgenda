@@ -19,7 +19,7 @@ class Agendamento {
       $dataAtual = new DateTime(); // cria uma nova data com a data atual
       $data = new DateTime($this->data); // cria uma nova data com a data armazenada na propriedade $this->data
       if ($data > $dataAtual) { // verifica se a data armazenada é maior que a data atual
-        return $data->format('d'); // retorna apenas o dia, caso a data seja maior que a atual
+        return $data->format('d/m'); // retorna apenas o dia, caso a data seja maior que a atual
       }
       return null; // caso contrário, retorna null
     }

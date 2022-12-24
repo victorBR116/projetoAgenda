@@ -2,6 +2,7 @@
   <head>
     <title>Agendamento</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="https://www.flaticon.com/br/icone-gratis/ampulheta_2748445?related_id=2748445&origin=pack" sizes="16x16">
   </head>
   <body>
     <div class="container mt-5">
@@ -25,4 +26,3 @@
       
   </body>
 </html>
-
